@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+. {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.add-video-button {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    padding: 10px 32px;
+    border: 1px solid #e0e0e0;
+    font-size: 26px;
+    outline: o;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+}
+.video-title {
+    color: aquamarine;
+}
+.video-thumbnail {
+    color: aquamarine;
+}
+.video-buttons {
+    color: white;
+    background-color: plum;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 2px;
+}
+.next-video-button {
+    color: wheat;
+    background-color: plum;
+    border: 2px solid purple;
+    padding: 10px;
+    padding-top: 2px;
+    border-radius: 2px;
+    padding-left: 3em;
+}
