@@ -25,6 +25,9 @@
                     <div class="mt-4 p-6">
                         <a href="{{ route('modulevideo.index') }}" class="video-cancel-button text-yellow-500 hover:underline ml-4">Modules</a>
                     </div>
+                    <div class="mt-4 p-6">
+                        <a href="{{ route('report.index') }}" class="video-cancel-button text-red-500 hover:underline ml-4">Reports</a>
+                    </div>
                 </div>
                 @endif
 

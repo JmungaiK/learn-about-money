@@ -18,11 +18,14 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <!-- User management options -->
                     <h3 class="text-lg font-semibold mt-4">User Management:</h3>
-                    <div class="mt-3 p-3">
-                        <a href="{{ route('user.index') }}" class="video-cancel-button text-gray-500 hover:underline">View Users</a>
+                    <div class="mt-5 p-3">
+                        <a href="{{ route('user.index') }}" class="video-cancel-button text-gray-500 hover:underline ml-4">View Users</a>
                     </div>
-                    <div class="mt-3 p-3">
-                        <a href="{{ route('user.create') }}" class="video-cancel-button text-gray-500 hover:underline">Create User</a>
+                    <div class="mt-5 p-3">
+                        <a href="{{ route('user.create') }}" class="video-cancel-button text-gray-500 hover:underline ml-4">Create User</a>
+                    </div>
+                    <div class="mt-5 p-3">
+                        <a href="{{ route('report.index') }}" class="video-cancel-button text-gray-500 hover:underline ml-4">Reports</a>
                     </div>
                 </div>
                 @endif

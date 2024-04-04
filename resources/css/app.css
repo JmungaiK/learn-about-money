@@ -10,39 +10,53 @@
     max-width: 980px;
     margin: 0 auto;
 }
-
-.add-video-button {
-    width: 200px;
-    display: block;
-    margin: 0 auto 20px;
-    background-color: #fff;
-    padding: 10px 32px;
-    border: 1px solid #e0e0e0;
-    font-size: 26px;
-    outline: o;
-    transition: all 0.3s;
-    cursor: pointer;
-    font-family: "Caveat", cursive;
+.logo {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 60px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
 }
-.video-title {
-    color: aquamarine;
+.hero {
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(
+        rgba(131, 97, 5, 0.3),
+        rgba(131, 97, 5, 0.3)
+    );
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.video-thumbnail {
-    color: aquamarine;
+.content {
+    text-align: center;
 }
-.video-buttons {
-    color: white;
-    background-color: plum;
-    border: 2px solid purple;
-    padding: 10px;
-    border-radius: 2px;
+.content h1 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
 }
-.next-video-button {
-    color: wheat;
-    background-color: plum;
-    border: 2px solid purple;
-    padding: 10px;
-    padding-top: 2px;
-    border-radius: 2px;
-    padding-left: 3em;
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Lower z-index to send it behind other content */
 }

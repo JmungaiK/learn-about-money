@@ -13,10 +13,16 @@
                 </div>
 
                 <div class="mt-4 p-6">
-                    <a href="{{ route('module.index') }}" class="video-cancel-button text-green-500 hover:underline">Modules</a>
+                    <a href="{{ route('module.index') }}" class="video-cancel-button text-purple-500 hover:underline ml-4">Modules</a>
                 </div>
                 <div class="mt-4 p-6">
-                    <a href="{{ route('progress.index') }}" class="video-cancel-button text-green-500 hover:underline">Your progress</a>
+                    <a href="{{ route('progress.index') }}" class="video-cancel-button text-green-500 hover:underline ml-4">Your progress</a>
+                </div>
+                <div class="mt-4 p-6">
+                    <a href="{{ route('report.generate', ['type' => 'modules']) }}" class="video-cancel-button text-orange-500 hover:underline ml-4">Download Modules Report</a>
+                </div>
+                <div class="mt-4 p-6">
+                    <a href="{{ route('report.generate', ['type' => 'videos']) }}" class="video-cancel-button text-gray-500 hover:underline ml-4">Download Videos Report</a>
                 </div>
             </div>
         </div>

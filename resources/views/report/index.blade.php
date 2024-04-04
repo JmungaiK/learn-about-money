@@ -12,30 +12,17 @@
                     {{ __("Welcome to the Reports Page!") }}
 
                     <!-- Display options to generate and view reports -->
-                    <h3 class="text-lg font-semibold mt-4">Generate Reports:</h3>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.user_activity') }}" class="video-cancel-button btn primary-btn">User Activity</a>
+                    <h3 class="text-lg font-semibold mt-4">Download Reports:</h3>
+                    <div class="mt-4 p-6">
+                        <a href="{{ route('report.generate', ['type' => 'modules']) }}" class="video-cancel-button text-orange-500 hover:underline ml-4">Download Modules Report</a>
                     </div>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.video_completion') }}" class="video-cancel-button btn primary-btn">Video Completion Rates</a>
+                    <div class="mt-4 p-6">
+                        <a href="{{ route('report.generate', ['type' => 'videos']) }}" class="video-cancel-button text-purple-500 hover:underline ml-4">Download Videos Report</a>
                     </div>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.module_progress') }}" class="video-cancel-button btn primary-btn">Module Progress</a>
+                    <div class="mt-4 p-6">
+                        <a href="{{ route('report.generate', ['type' => 'users']) }}" class="video-cancel-button text-red-500 hover:underline ml-4">Download Users Report</a>
                     </div>
                     <!-- Add more report options as needed -->
-
-                    <!-- Display report viewing options -->
-                    <h3 class="text-lg font-semibold mt-6">View Reports:</h3>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.view', ['type' => 'user_activity']) }}" class="video-cancel-button btn primary-btn">View User Activity</a>
-                    </div>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.view', ['type' => 'video_completion']) }}" class="video-cancel-button btn primary-btn">View Video Completion Rates</a>
-                    </div>
-                    <div class="video-buttons">
-                        <a href="{{ route('report.view', ['type' => 'module_progress']) }}" class="video-cancel-button btn primary-btn">View Module Progress</a>
-                    </div>
-                    <!-- Add more report viewing options as needed -->
                 </div>
             </div>
         </div>

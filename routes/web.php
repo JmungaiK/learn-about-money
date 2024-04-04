@@ -55,7 +55,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     // Report Generation Route
     Route::get('/report', [ReportController::class, 'index'])->name('report.index');
-    Route::post('/report/generate', [ReportController::class, 'generate'])->name('report.generate');
+    Route::get('/reports/{type}', [ReportController::class, 'generate'])->name('report.generate');
 });
 
 // Authentication Routes
