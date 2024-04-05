@@ -43,14 +43,14 @@
 
                     <div class="content">
                         <h1>Learn-About-Money</h1>
-                        <a href="{{ route('login') }}">Explore</a>
+                        <a href="{{ route('login') }}" class="content">Explore</a>
                     </div>
 
 
                 </main>
 
-                <footer class="py-16 mt-9 text-center text-lg text-black dark:text-white/70">
-                    <a href="{{ route('register') }}">Learn About Money</a>
+                <footer class="footer py-16 mt-9 text-center text-lg text-black dark:text-white/70">
+                    <a href="{{ route('register') }}" class="footer">Learn About Money</a>
                 </footer>
             </div>
         </div>
